@@ -1,27 +1,33 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+
 
 .title-box{
     display: flex; flex-direction: row;
     justify-content: center; align-items: center;
     box-shadow: 5px 5px 10px black;
-    border: 1em solid;
+    border: 1rem solid;
     background-image: linear-gradient(45deg, blue, red); 
     border-image: linear-gradient(45deg, red, blue) 10;
-    margin: 1em; width: 50em;
+    margin: 1rem; width: 80vw;
     color: white; text-shadow: 2px 2px 5px black;
     font-family: 'Rock Salt', cursive;
 }
-/* ------------------------------------------ */
-.body {display:flex; flex-direction: column; align-items: center;
-  }
 
 .name-and-score{
     display: flex; flex-direction: row; justify-content: space-between;
     background-color: black; color: white;
-    width: 51em;
+    width: 70vw;
     box-shadow: 5px 5px 10px black;
-    border: .3em solid;
+    border: .3rem solid;
     border-image: linear-gradient(45deg, blue, red) 10;
-    margin-top: 1em;
+    margin: 1rem;
 }
     .p1{
         display: flex; flex-direction: column;
@@ -29,7 +35,7 @@
         .p1ns{
             display: flex; justify-content: left; align-content: space-between;
             font-size: 2em; font-family: 'Rock Salt', cursive;
-            padding-left: 1em;
+            padding-left: 1em; color: white;
         }
 
     .p2{
@@ -41,9 +47,94 @@
             padding-right: 1em;
         }
 
+.start-game{
+    visibility: visible;
+}
+.start-game-hidden{
+    visibility: hidden;
+}
+
+.active-highlight{
+    color: red; text-shadow: 2px 2px 3px white;
+}
+
 /* ------------------------------------------ */
 
-.game-board{
+#game-table {
+    margin-top: 20px;
+    width: 340px;
+    display: flex;
+    flex-wrap: wrap;
+    visibility: hidden;
+  }
+
+.xMark {
+    background: url("letter-x.jpg");
+    background-size: 100px 100px;
+    }
+
+.oMark {
+    background: url("letter-o.jpg");
+    background-size: 100px 100px;
+    }
+  
+  .table-slot {
+    width: 100px;
+    height: 100px;
+  }
+    .tl{
+        border-right: 10px solid black;
+        border-bottom: 10px solid black;
+    }
+    .tm{
+        border-left: 10px solid black;
+        border-right: 10px solid black;
+        border-bottom: 10px solid black;
+      }
+    .tr{
+        border-left: 10px solid black;
+        border-bottom: 10px solid black;
+      }
+    .ml{
+        border-top: 10px solid black;
+        border-right: 10px solid black;
+        border-bottom: 10px solid black;
+    }
+    .mm{
+        border-top: 10px solid black;
+        border-right: 10px solid black;
+        border-bottom: 10px solid black;
+        border-left: 10px solid black;
+      }
+    .mr{
+        border-left: 10px solid black;
+        border-bottom: 10px solid black;
+        border-top: 10px solid black;
+      }
+    .bl{
+        border-right: 10px solid black;
+        border-top: 10px solid black;
+    }
+    .bm{
+        border-left: 10px solid black;
+        border-right: 10px solid black;
+        border-top: 10px solid black;
+      }
+    .br{
+        border-left: 10px solid black;
+        border-top: 10px solid black;
+      }
+
+
+
+
+
+
+
+
+
+
+/* .game-board{
     margin-top: 5rem;
 }
 
@@ -92,7 +183,7 @@
     border-left: .5rem solid black; border-top: .5rem solid black;
  }
 
-
+ */
 
 
 
