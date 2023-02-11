@@ -1,33 +1,43 @@
-.body {
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
+
+.main{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
-  }
+    width: 95%;
+    background-color: white;
+    border: .75rem solid gray ;border-style:ridge;
 
+}
 
 .title-box{
     display: flex; flex-direction: row;
     justify-content: center; align-items: center;
-    box-shadow: 5px 5px 10px black;
-    border: 1rem solid;
+    box-shadow: 3px 3px 3px black;
+    border: 15px solid;
     background-image: linear-gradient(45deg, blue, red); 
     border-image: linear-gradient(45deg, red, blue) 10;
-    margin: 1rem; width: 80vw;
-    color: white; text-shadow: 2px 2px 5px black;
+    margin: 15px;
+    width: 80%;
+    color: white; text-shadow: 2px 2px 4px black;
     font-family: 'Rock Salt', cursive;
+    font-size: 3rem;
 }
 
 .name-and-score{
     display: flex; flex-direction: row; justify-content: space-between;
     background-color: black; color: white;
-    width: 70vw;
+    width: 80%;
     box-shadow: 5px 5px 10px black;
-    border: .3rem solid;
+    border: 5px solid;
     border-image: linear-gradient(45deg, blue, red) 10;
-    margin: 1rem;
+    margin: 15px;
 }
     .p1{
         display: flex; flex-direction: column;
@@ -35,7 +45,7 @@
         .p1ns{
             display: flex; justify-content: left; align-content: space-between;
             font-size: 2em; font-family: 'Rock Salt', cursive;
-            padding-left: 1em; color: white;
+            padding-left: 15px; padding-right: 15px; color: white;
         }
 
     .p2{
@@ -44,7 +54,7 @@
         .p2ns{
             display: flex; justify-content: right; align-content: space-between; flex-wrap: wrap;
             font-size: 2em; font-family: 'Rock Salt', cursive;
-            padding-right: 1em;
+            padding-right: 15px; padding-left: 15px;
         }
 
 .start-game{
@@ -54,146 +64,95 @@
     visibility: hidden;
 }
 
-.active-highlight{
-    color: red; text-shadow: 2px 2px 3px white;
+.next-game{
+    visibility: hidden;
 }
 
-/* ------------------------------------------ */
+.active-highlight{
+    color: red;
+    text-shadow: 2px 2px 3px white;
+}
+
+.winner{
+    background-color: rgb(155, 255, 0);
+    color: red;
+    text-shadow: 2px 2px 3px black;
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+  }
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+}
 
 #game-table {
-    margin-top: 20px;
-    width: 340px;
+    width: 25em;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 20px;
     visibility: hidden;
   }
 
 .xMark {
     background: url("letter-x.jpg");
-    background-size: 100px 100px;
+    background-size: 6.2em 6.2em;
     }
 
 .oMark {
     background: url("letter-o.jpg");
-    background-size: 100px 100px;
+    background-size: 6.2em 6.2em;
     }
   
   .table-slot {
-    width: 100px;
-    height: 100px;
+    width: 6.2em;
+    height: 6.2em;
   }
     .tl{
-        border-right: 10px solid black;
-        border-bottom: 10px solid black;
+        border-right: .63em solid black;
+        border-bottom: .63em solid black;
     }
     .tm{
         border-left: 10px solid black;
-        border-right: 10px solid black;
-        border-bottom: 10px solid black;
+        border-right: .63em solid black;
+        border-bottom: .63em solid black;
       }
     .tr{
-        border-left: 10px solid black;
-        border-bottom: 10px solid black;
+        border-left: .63em solid black;
+        border-bottom: .63em solid black;
       }
     .ml{
-        border-top: 10px solid black;
-        border-right: 10px solid black;
-        border-bottom: 10px solid black;
+        border-top: .63em solid black;
+        border-right: .63em solid black;
+        border-bottom: .63em solid black;
     }
     .mm{
-        border-top: 10px solid black;
-        border-right: 10px solid black;
-        border-bottom: 10px solid black;
-        border-left: 10px solid black;
+        border-top: .63em solid black;
+        border-right: .63em solid black;
+        border-bottom: .63em solid black;
+        border-left: .63em solid black;
       }
     .mr{
-        border-left: 10px solid black;
-        border-bottom: 10px solid black;
-        border-top: 10px solid black;
+        border-left: .63em solid black;
+        border-bottom: .63em solid black;
+        border-top: .63em solid black;
       }
     .bl{
-        border-right: 10px solid black;
-        border-top: 10px solid black;
+        border-right: .63em solid black;
+        border-top: .63em solid black;
     }
     .bm{
-        border-left: 10px solid black;
-        border-right: 10px solid black;
-        border-top: 10px solid black;
+        border-left: .63em solid black;
+        border-right: .63em solid black;
+        border-top: .63em solid black;
       }
     .br{
-        border-left: 10px solid black;
-        border-top: 10px solid black;
+        border-left: .63em solid black;
+        border-top: .63em solid black;
       }
-
-
-
-
-
-
-
-
-
-
-/* .game-board{
-    margin-top: 5rem;
-}
-
-.game-board tr:nth-child(1) td:nth-child(1) {
-    height: 10rem; width: 10rem;
-    border-right: .5rem solid black; border-bottom: .5rem solid black;
-}
-
- .game-board tr:nth-child(2) td:nth-child(1) {
-    height: 10rem; width: 10rem;
-    border-right: .5rem solid black; border-bottom: .5rem solid black; border-top: .5rem solid black;
-}
-
- .game-board tr:nth-child(3) td:nth-child(1) {
-    height: 10rem; width: 10rem;
-    border-right: .5rem solid black; border-top: .5rem solid black;
-}
-
- .game-board tr:nth-child(1) td:nth-child(2) {
-    height: 10rem; width: 10rem;
-    border-right: .5rem solid black; border-bottom: .5rem solid black; border-left: .5rem solid black;
- }
-
- .game-board tr:nth-child(2) td:nth-child(2) {
-    height: 10rem; width: 10rem;
-    border: .5rem solid black;
- }
-
- .game-board tr:nth-child(3) td:nth-child(2) {
-    height: 10rem; width: 10rem;
-    border-right: .5rem solid black; border-top: .5rem solid black; border-left: .5rem solid black;
- }
- 
- .game-board tr:nth-child(1) td:nth-child(3) {
-    height: 10rem; width: 10rem;
-    border-left: .5rem solid black; border-bottom: .5rem solid black;
- }
-
- .game-board tr:nth-child(2) td:nth-child(3) {
-    height: 10rem; width: 10rem;
-    border-left: .5rem solid black; border-bottom: .5rem solid black; border-top: .5rem solid black;
- }
-
- .game-board tr:nth-child(3) td:nth-child(3) {
-    height: 10rem; width: 10rem;
-    border-left: .5rem solid black; border-top: .5rem solid black;
- }
-
- */
-
-
-
-
-/* ... */
-
-
-
-
-
-
-
-

@@ -10,42 +10,43 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
     <title>Tic-Tac-Toe</title>
+    <!-- SEE MY NOTES IN THE JAVASCRIPT FILE -->
 </head>
 <body class="body">
+    <main class="main">
 
-    <div class="title-box">
-        <h1 id="title">Tic-Tac-Toe</h1>
-    </div>
+        <div class="title-box">Tic-Tac-Toe</div>
     
-    <div class="name-and-score">
-        <div class="p1">
-            <div class="p1ns p1n"></div>
-            <div class="p1ns p1s"></div>
+        <div class="name-and-score">
+            <div class="p1">
+                <div class="p1ns p1n"></div>
+                <div class="p1ns p1s"></div>
+            </div>
+            <div class="p2">
+                <div class="p2ns p2n"></div>
+                <div class="p2ns p2s"></div>
+            </div>
         </div>
-        <div class="p2">
-            <div class="p2ns p2n"></div>
-            <div class="p2ns p2s"></div>
+
+        <div>
+            <button class="start-game">Start new game</button>
         </div>
-    </div>
+        <div>
+            <button class="next-game">Next Game</button>
+        </div>
 
-    <div>
-        <button class="start-game">Start a new game</button>
-    </div>
-
-
-     <div id="game-table">
-        <div class="table-slot tl"></div>
-        <div class="table-slot tm"></div>
-        <div class="table-slot tr"></div>
-        <div class="table-slot ml"></div>
-        <div class="table-slot mm"></div>
-        <div class="table-slot mr"></div>
-        <div class="table-slot bl"></div>
-        <div class="table-slot bm"></div>
-        <div class="table-slot br"></div>
-    </div>
-
-
-    <div></div>
+        <div id="game-table">
+            <div class="tl table-slot"></div>
+            <div class="tm table-slot"></div>
+            <div class="tr table-slot"></div>
+            <div class="ml table-slot"></div>
+            <div class="mm table-slot"></div>
+            <div class="mr table-slot"></div>
+            <div class="bl table-slot"></div>
+            <div class="bm table-slot"></div>
+            <div class="br table-slot"></div>
+        </div>
+    
+    </main>
 </body>
 </html>
