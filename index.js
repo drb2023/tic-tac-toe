@@ -1,6 +1,6 @@
 // When we started this project I set up the HTML & CSS well before
 // adding the JavaScript. I had already made my game table and my game
-// marking solution so I rather wanted to focus on getting everrything 
+// marking solution so I wanted to focus on getting everything 
 // functional with what I had rather than delete it and have the JavaScript 
 // create it. This is why I have nine div's in my HTML representing my table.
 // I understand creating the table in JavaScript is the preferred method & 
