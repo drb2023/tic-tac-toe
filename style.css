@@ -12,7 +12,7 @@
     align-items: center;
     width: 95%;
     background-color: white;
-    border: .75rem solid gray ;border-style:ridge;
+    border: 10px solid gray ;border-style:ridge;
 
 }
 
@@ -23,11 +23,11 @@
     border: 15px solid;
     background-image: linear-gradient(45deg, blue, red); 
     border-image: linear-gradient(45deg, red, blue) 10;
-    margin: 15px;
+    margin-top: 15px; margin-left: 5px; margin-right: 5px;
     width: 80%;
     color: white; text-shadow: 2px 2px 4px black;
     font-family: 'Rock Salt', cursive;
-    font-size: 3rem;
+    font-size: 40px;
 }
 
 .name-and-score{
@@ -44,17 +44,17 @@
     }
         .p1ns{
             display: flex; justify-content: left; align-content: space-between;
-            font-size: 2em; font-family: 'Rock Salt', cursive;
-            padding-left: 15px; padding-right: 15px; color: white;
+            font-size: 30px; font-family: 'Rock Salt', cursive;
+            padding-left: 15px; padding-right: 5px;
         }
 
     .p2{
         display: flex; flex-direction: column;
     }
         .p2ns{
-            display: flex; justify-content: right; align-content: space-between; flex-wrap: wrap;
-            font-size: 2em; font-family: 'Rock Salt', cursive;
-            padding-right: 15px; padding-left: 15px;
+            display: flex; justify-content: right; align-content: space-between;
+            font-size: 30px; font-family: 'Rock Salt', cursive;
+            padding-right: 15px; padding-left: 5px;
         }
 
 .start-game{
